@@ -6,6 +6,9 @@ TagManager:
   tags:
   - obstacle
   - platform
+  - OutOfBound
+  - checkPoint
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

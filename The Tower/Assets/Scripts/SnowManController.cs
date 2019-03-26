@@ -5,12 +5,15 @@ using UnityEngine;
 public class SnowManController : MonoBehaviour
 {
 
+    [SerializeField] private Transform respawnPoint;
+    [SerializeField] private Transform respawnPoint2;
+    public int touch = 0;
+
     public float movementSpeed;
     public float jumpHeight;
     public float rotationSpeed = 1f;
     public LayerMask ground;
     public Transform feet;
-
     private bool isGrounded = false;
     private Vector3 direction;
     private Rigidbody rbody;
@@ -55,6 +58,25 @@ public class SnowManController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("CheckPoint"))
+        {
+            touch = 1;
+        }
+        if (other.gameObject.CompareTag("OutOfBound"))
+        {
+            if (touch == 1)
+            {
+                rbody.transform.position = respawnPoint2.transform.position;
+            }
+            else
+            {
+                rbody.transform.position = respawnPoint.transform.position;
+            }
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         //if making contact with ground layer
@@ -67,6 +89,7 @@ public class SnowManController : MonoBehaviour
             transform.parent = collision.transform;
 
         }
+
     }
 
     private void OnCollisionExit(Collision collision)
