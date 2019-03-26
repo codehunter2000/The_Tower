@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SnowManController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class SnowManController : MonoBehaviour
     private bool isGrounded = false;
     private Vector3 direction;
     private Rigidbody rbody;
+    private int count;
   //  private AudioSource audio;
 
     private float minY = -60f;
@@ -27,6 +29,7 @@ public class SnowManController : MonoBehaviour
         movementSpeed = 5.0f;
         jumpHeight = 3.0f;
         rbody = GetComponent<Rigidbody>();
+        count = 0;
       //  audio = GetComponent<AudioSource>();
     }
 
@@ -69,6 +72,16 @@ public class SnowManController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Cherry"))
+        {
+            other.gameObject.SetActive(false);
+            count++;
+        }
+    }
+
+   
     private void OnCollisionExit(Collision collision)
     {
 
