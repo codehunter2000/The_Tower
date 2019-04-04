@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SnowManController : MonoBehaviour
 {
@@ -96,6 +97,7 @@ public class SnowManController : MonoBehaviour
         if (other.gameObject.CompareTag("WinPoint"))
         {
 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -115,5 +117,9 @@ public class SnowManController : MonoBehaviour
 
         }
     }
-    
+
+    void OnDisable()
+    {
+        PlayerPrefs.SetInt("score", count);
+    }
 }
