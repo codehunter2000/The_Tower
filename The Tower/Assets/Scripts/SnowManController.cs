@@ -12,6 +12,7 @@ public class SnowManController : MonoBehaviour
     public LayerMask ground;
     public Transform feet;
 
+    [SerializeField] private Transform respawnPoint;
     private bool isGrounded = false;
     private Vector3 direction;
     private Rigidbody rbody;
@@ -79,6 +80,23 @@ public class SnowManController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
         }
+
+        if (other.gameObject.CompareTag("CheckPoint"))
+        {
+            respawnPoint.transform.position = rbody.transform.position;
+            Debug.Log("CheckPoint trigger");
+        }
+
+        if (other.gameObject.CompareTag("OutOfBound"))
+        {
+            rbody.transform.position = respawnPoint.transform.position;
+            Debug.Log("OutOfBound trigger");
+        }
+
+        if (other.gameObject.CompareTag("WinPoint"))
+        {
+
+        }
     }
 
    
@@ -97,6 +115,5 @@ public class SnowManController : MonoBehaviour
 
         }
     }
-
-
+    
 }
