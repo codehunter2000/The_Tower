@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\SnowManController.cs" />
+    <Compile Include="Assets\Scripts\spike_test.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/cristiantapia/Documents/GitHub/The_Tower/The Tower/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
