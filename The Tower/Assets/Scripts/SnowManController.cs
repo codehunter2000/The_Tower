@@ -84,8 +84,8 @@ public class SnowManController : MonoBehaviour
 
         if (other.gameObject.CompareTag("CheckPoint"))
         {
-            respawnPoint.transform.position = rbody.transform.position;
-            Debug.Log("CheckPoint trigger");
+            respawnPoint.transform.position = rbody.transform.position + new Vector3(0.0f,3.0f,0.0f);
+ 
         }
 
         if (other.gameObject.CompareTag("OutOfBound"))
