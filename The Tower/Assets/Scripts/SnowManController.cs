@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SnowManController : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class SnowManController : MonoBehaviour
     public LayerMask ground;
     public Transform feet;
 
+    [SerializeField] private Transform respawnPoint;
     private bool isGrounded = false;
     private Vector3 direction;
     private Rigidbody rbody;
@@ -79,6 +81,24 @@ public class SnowManController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
         }
+
+        if (other.gameObject.CompareTag("CheckPoint"))
+        {
+            respawnPoint.transform.position = rbody.transform.position + new Vector3(0.0f,3.0f,0.0f);
+ 
+        }
+
+        if (other.gameObject.CompareTag("OutOfBound"))
+        {
+            rbody.transform.position = respawnPoint.transform.position;
+            Debug.Log("OutOfBound trigger");
+        }
+
+        if (other.gameObject.CompareTag("WinPoint"))
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
    
@@ -98,5 +118,8 @@ public class SnowManController : MonoBehaviour
         }
     }
 
-
+    void OnDisable()
+    {
+        PlayerPrefs.SetInt("score", count);
+    }
 }
