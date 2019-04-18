@@ -12,12 +12,17 @@ public class SnowManController : MonoBehaviour
     public float rotationSpeed = 1f;
     public LayerMask ground;
     public Transform feet;
+    public Text cherryCountText;
 
     [SerializeField] private Transform respawnPoint;
     private bool isGrounded = false;
     private Vector3 direction;
     private Rigidbody rbody;
-    private int count;
+
+    //Final Score
+    private int cherryCount;
+    private int deathCount;
+    private int finalScore;
   //  private AudioSource audio;
 
     private float minY = -60f;
@@ -31,7 +36,9 @@ public class SnowManController : MonoBehaviour
         movementSpeed = 5.0f;
         jumpHeight = 3.0f;
         rbody = GetComponent<Rigidbody>();
-        count = 0;
+        cherryCount = 0;
+        deathCount = 0;
+
       //  audio = GetComponent<AudioSource>();
     }
 
@@ -79,7 +86,8 @@ public class SnowManController : MonoBehaviour
         if (other.gameObject.CompareTag("Cherry"))
         {
             other.gameObject.SetActive(false);
-            count++;
+            cherryCount++;
+            setCountText();
         }
 
         if (other.gameObject.CompareTag("CheckPoint"))
@@ -90,18 +98,26 @@ public class SnowManController : MonoBehaviour
 
         if (other.gameObject.CompareTag("OutOfBound"))
         {
+            deathCount++;
+            setCountText();
             rbody.transform.position = respawnPoint.transform.position;
             Debug.Log("OutOfBound trigger");
         }
 
         if (other.gameObject.CompareTag("WinPoint"))
         {
-
+            PlayerPrefs.SetInt("cherries", cherryCount);
+            PlayerPrefs.SetInt("deaths", deathCount);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
-   
+    void setCountText()
+    {
+        cherryCountText.text = "Cherries: " + cherryCount.ToString() +
+                                "\nDeaths: " + deathCount.ToString();
+    }
+
     private void OnCollisionExit(Collision collision)
     {
 
@@ -120,6 +136,5 @@ public class SnowManController : MonoBehaviour
 
     void OnDisable()
     {
-        PlayerPrefs.SetInt("score", count);
     }
 }
