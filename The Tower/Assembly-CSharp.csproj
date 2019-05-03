@@ -60,27 +60,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\asset_form_store\Realistic Hail Set\Demo Scene\Scripts\DemoSceneController.cs" />
     <Compile Include="Assets\Scripts\Cherry_Rotator.cs" />
     <Compile Include="Assets\Scripts\FinalScore.cs" />
     <Compile Include="Assets\Scripts\PlatformController.cs" />
     <Compile Include="Assets\Scripts\PusherScript.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\RotatorSingleAxis.cs" />
     <Compile Include="Assets\Scripts\SnowManController.cs" />
     <Compile Include="Assets\Scripts\Start.cs" />
+    <None Include="Assets\asset_form_store\EnviromentEffectsShaders\Shaders\Moss.shader" />
+    <None Include="Assets\asset_form_store\Realistic Hail Set\README.txt" />
+    <None Include="Assets\asset_form_store\EnviromentEffectsShaders\Shaders\Sand.shader" />
+    <None Include="Assets\asset_form_store\EnviromentEffectsShaders\Shaders\Lava.shader" />
+    <None Include="Assets\asset_form_store\EnviromentEffectsShaders\Shaders\Snow.shader" />
+    <None Include="Assets\asset_form_store\EnviromentEffectsShaders\Shaders\Water.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -284,13 +292,13 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Erik Anderson/Downloads/The_Tower-texture/The_Tower-texture/The Tower/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
