@@ -1,6 +1,6 @@
 Win
 PlayerPath?
-C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 485/Projects/Project 2/The_Tower/The Tower/Builds/The Tower.exe
+C:/Users/gabri/Documents/The_Tower/The Tower/Builds/The Tower.exe
 SceneListBegin?
 Assets/Scenes/Main Menu.unity
 Assets/Scenes/Erik Scene.unity
@@ -22,6 +22,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 be8b29ecd05b56bbfb5cc0e39b16c11b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.FirstPerson.FirstPersonController
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
+3f7d3eac3468685ef18425a40cd5b891 Assembly-CSharp.dll:.RotatorSingleAxis
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:.EventSystemChecker
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -184,9 +185,10 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 49dcb3939f87870ac10cf1f8fcdfb35e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FollowTarget
-7747796198e2754574fc794241e8a54e Assembly-CSharp.dll:.SnowManController
+5d9ff35218ab5c9a0ba46ffbecfd1f4c Assembly-CSharp.dll:.SnowManController
 219ec6059796d8951d2adcd8505d0dc2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 a8cd58c1680eb5251e5604e560cf89e9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
+e365214488cc5d5c93e31a4f8eac4962 Assembly-CSharp.dll:LPHailSet.DemoSceneController
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 3f7d3eac3468685ef18425a40cd5b891 Assembly-CSharp.dll:.Rotator
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro

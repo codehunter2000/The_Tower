@@ -13,6 +13,7 @@ public class SnowManController : MonoBehaviour
     public LayerMask ground;
     public Transform feet;
     public Text cherryCountText;
+    public AudioSource jumpSound, landingSound, pickupSound, respawnSound;
 
     [SerializeField] private Transform respawnPoint;
     private bool isGrounded = false;
@@ -62,8 +63,9 @@ public class SnowManController : MonoBehaviour
       //  bool isGrounded = Physics.CheckSphere(feet.position, 0.1f, ground, QueryTriggerInteraction.Ignore);
         if (Input.GetKeyDown("space") && isGrounded)
         {
-           // audio.Play();
+           jumpSound.Play();
             rbody.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
+            isGrounded = false;
         }
     }
 
@@ -72,6 +74,7 @@ public class SnowManController : MonoBehaviour
         //if making contact with ground layer
         if (collision.gameObject.layer == 9)
         {
+            landingSound.Play();
             isGrounded = true;
         }
         if (collision.gameObject.tag == "platform")
@@ -86,6 +89,7 @@ public class SnowManController : MonoBehaviour
         if (other.gameObject.CompareTag("Cherry"))
         {
             other.gameObject.SetActive(false);
+            pickupSound.Play();
             cherryCount++;
             setCountText();
         }
@@ -101,6 +105,7 @@ public class SnowManController : MonoBehaviour
             deathCount++;
             setCountText();
             rbody.transform.position = respawnPoint.transform.position;
+            respawnSound.Play();
             Debug.Log("OutOfBound trigger");
         }
 
