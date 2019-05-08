@@ -1,9 +1,9 @@
 Win
 PlayerPath?
-C:/Users/gabri/Documents/The_Tower/The Tower/Builds/The Tower.exe
+C:/Users/gabri/Documents/GitHub/The_Tower/The Tower/Builds/The Tower.exe
 SceneListBegin?
 Assets/Scenes/Main Menu.unity
-Assets/Scenes/Erik Scene.unity
+Assets/Scenes/Main Scene.unity
 Assets/Scenes/Final Score.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret

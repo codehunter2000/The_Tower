@@ -38073,10 +38073,10 @@ MonoBehaviour:
     m_Bits: 0
   feet: {fileID: 2073092380}
   cherryCountText: {fileID: 1840966364}
-  jumpSound: {fileID: 0}
-  landingSound: {fileID: 0}
-  pickupSound: {fileID: 0}
-  respawnSound: {fileID: 0}
+  jumpSound: {fileID: 402031968}
+  landingSound: {fileID: 827901968}
+  pickupSound: {fileID: 703102222}
+  respawnSound: {fileID: 1168952830}
   respawnPoint: {fileID: 1446936527}
 --- !u!136 &2073092377
 CapsuleCollider:
