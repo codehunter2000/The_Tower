@@ -1,6 +1,6 @@
 Win
 PlayerPath?
-C:/Users/gabri/Documents/GitHub/The_Tower/The Tower/Builds/The Tower.exe
+C:/Users/Erik Anderson/Documents/School/Spring 2019/CS 436/Projects/The_Tower/The Tower/Builds/The Tower.exe
 SceneListBegin?
 Assets/Scenes/Main Menu.unity
 Assets/Scenes/Main Scene.unity
